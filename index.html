@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Akvaryum Park Cafe & Restaurant — Kaş Yeşilköy</title>
+<meta name="description" content="Kaş Yeşilköy'de, kendi bahçemizde, deniz esintisi eşliğinde taze deniz ürünleri. Aile işletmesi, uygun fiyat, samimi ortam." />
+
+<!-- ===== SOSYAL PAYLAŞIM (Open Graph) ===== -->
+<meta property="og:title" content="Akvaryum Park Cafe & Restaurant" />
+<meta property="og:description" content="Kaş Yeşilköy'de kendi bahçemizde, deniz esintisiyle taze deniz ürünleri." />
+<meta property="og:type" content="restaurant" />
+<!-- <meta property="og:image" content="img/hero.jpg" /> -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ================= ÜST BAR ================= -->
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Akvaryum Park">
+      <!-- Logo: dilersen bu SVG yerine <img src="img/logo.png"> koyabilirsin -->
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M2 12c3-4 7-6 11-6 4 0 7 2 9 6-2 4-5 6-9 6-4 0-8-2-11-6Z"/>
+        <circle cx="9" cy="12" r="1" fill="currentColor"/>
+        <path d="M2 12c-1 0-2-1-2-2m0 6c1 0 2-1 2-2"/>
+      </svg>
+      <span style="display:flex;flex-direction:column">
+        <b>Akvaryum Park</b>
+        <span>Cafe &amp; Restaurant</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#hikaye"  data-tr="Hikayemiz" data-en="Our Story">Hikayemiz</a>
+      <a href="menu.html" data-tr="Menü" data-en="Menu">Menü</a>
+      <a href="#galeri"  data-tr="Galeri" data-en="Gallery">Galeri</a>
+      <a href="#rezervasyon" data-tr="Rezervasyon" data-en="Reservation">Rezervasyon</a>
+      <a href="#yorumlar" data-tr="Yorumlar" data-en="Reviews">Yorumlar</a>
+      <a href="#iletisim" data-tr="İletişim" data-en="Contact">İletişim</a>
+    </nav>
+
+    <div class="lang" role="group" aria-label="Dil / Language">
+      <button data-lang="tr" type="button">TR</button>
+      <button data-lang="en" type="button">EN</button>
+    </div>
+
+    <button class="menu-toggle" aria-label="Menü" type="button">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <span class="kicker" data-tr="Kaş · Yeşilköy · Antalya" data-en="Kaş · Yeşilköy · Antalya">Kaş · Yeşilköy · Antalya</span>
+    <h1 data-tr="Bahçemizde, denizin tam yanı başında." data-en="In our garden, right beside the sea.">Bahçemizde, denizin tam yanı başında.</h1>
+    <p class="lead"
+       data-tr="Kendi evimizin bahçesinde kurduğumuz bu küçük aile sofrasına hoş geldiniz. Taze deniz ürünleri, samimi bir ortam ve herkese uygun fiyatlar."
+       data-en="Welcome to our little family table, set in the garden of our own home. Fresh seafood, a warm atmosphere, and prices that suit everyone.">
+       Kendi evimizin bahçesinde kurduğumuz bu küçük aile sofrasına hoş geldiniz. Taze deniz ürünleri, samimi bir ortam ve herkese uygun fiyatlar.</p>
+    <div class="cta-row">
+      <a class="btn" href="menu.html" data-tr="Menüyü Gör" data-en="View Menu">Menüyü Gör</a>
+      <!-- TELEFON: numarayı buraya yaz (tel: ve görünen metin) -->
+      <a class="btn ghost" href="tel:+905323065948" data-tr="Rezervasyon / Ara" data-en="Reservation / Call">Rezervasyon / Ara</a>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,40 C240,90 480,0 720,30 C960,60 1200,90 1440,40 L1440,90 L0,90 Z"></path>
+  </svg>
+</section>
+
+<!-- ================= HİKAYE ================= -->
+<section class="story" id="hikaye">
+  <div class="wrap story-grid">
+    <div>
+      <p class="eyebrow" data-tr="Hikayemiz" data-en="Our Story">Hikayemiz</p>
+      <h2 data-tr="Bir ev, bir bahçe, bir aile" data-en="A home, a garden, a family">Bir ev, bir bahçe, bir aile</h2>
+      <p data-tr="Biz Kaş Yeşilköy'ün yerlisiyiz. Yıllar önce, kendi evimizin bahçesinde hayalini kurduğumuz sofrayı kurduk. Deniz esintisinin gölgeli ağaçların arasından geçtiği bu bahçede, misafirlerimizi kendi ailemizden biri gibi ağırlıyoruz."
+         data-en="We are locals of Kaş Yeşilköy. Years ago we set the table we had always dreamed of, in the garden of our own home. Here, where the sea breeze drifts through shady trees, we welcome every guest like family.">
+         Biz Kaş Yeşilköy'ün yerlisiyiz. Yıllar önce, kendi evimizin bahçesinde hayalini kurduğumuz sofrayı kurduk. Deniz esintisinin gölgeli ağaçların arasından geçtiği bu bahçede, misafirlerimizi kendi ailemizden biri gibi ağırlıyoruz.</p>
+      <p data-tr="Burası bizim evimiz olduğu için ekstra kira yükümüz yok — bu avantajı doğrudan sofranıza yansıtıyoruz. Amacımız basit: kaliteli, taze lezzetleri herkesin gönül rahatlığıyla yiyebileceği bir fiyata sunmak."
+         data-en="Because this is our own home, we carry no extra rent — and we pass that advantage straight to your table. Our aim is simple: quality, fresh flavours at a price everyone can enjoy with peace of mind.">
+         Burası bizim evimiz olduğu için ekstra kira yükümüz yok — bu avantajı doğrudan sofranıza yansıtıyoruz. Amacımız basit: kaliteli, taze lezzetleri herkesin gönül rahatlığıyla yiyebileceği bir fiyata sunmak.</p>
+      <a class="btn sea" href="menu.html" data-tr="Soframıza Göz Atın" data-en="See What's on the Table">Soframıza Göz Atın</a>
+    </div>
+    <!-- FOTOĞRAF: aşağıdaki div içeriğini <img src="img/bahce.jpg" alt="..."> ile değiştir -->
+    <div class="photo">
+      <div class="photo-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+        <span data-tr="Buraya bahçeden / aileden bir fotoğraf" data-en="A photo from the garden / family goes here">Buraya bahçeden / aileden bir fotoğraf</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ÖNE ÇIKANLAR ================= -->
+<section class="features">
+  <div class="wrap">
+    <div class="cards">
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 12c3-4 7-6 11-6 4 0 7 2 9 6-2 4-5 6-9 6-4 0-8-2-11-6Z"/><circle cx="9" cy="12" r="1.2" fill="currentColor"/></svg></div>
+        <h3 data-tr="Günün Taze Balığı" data-en="Fresh Catch of the Day">Günün Taze Balığı</h3>
+        <p data-tr="Mevsiminde, bölgenin en taze deniz ürünleri sofranızda." data-en="The freshest local seafood, in season, on your table.">Mevsiminde, bölgenin en taze deniz ürünleri sofranızda.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-7-10a7 7 0 0 1 14 0c0 5.5-7 10-7 10Z"/><circle cx="12" cy="11" r="2.5"/></svg></div>
+        <h3 data-tr="Gerçek Aile İşletmesi" data-en="A True Family Business">Gerçek Aile İşletmesi</h3>
+        <p data-tr="Mutfaktan servise, her şey bizzat ailemizin elinden geçiyor." data-en="From kitchen to service, everything passes through our own hands.">Mutfaktan servise, her şey bizzat ailemizin elinden geçiyor.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9 9.5h4.5a1.5 1.5 0 0 1 0 3H9m0 0h5"/></svg></div>
+        <h3 data-tr="Uygun Fiyat, Deniz Manzarası" data-en="Fair Prices, Sea View">Uygun Fiyat, Deniz Manzarası</h3>
+        <p data-tr="Manzaranın tadını çıkarın; cebinizi düşünmek bize kalsın." data-en="Enjoy the view — let us worry about your wallet.">Manzaranın tadını çıkarın; cebinizi düşünmek bize kalsın.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MENÜ ÖNİZLEME ================= -->
+<section class="menu-preview">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" style="color:var(--gold)" data-tr="Sofradan" data-en="From the Table">Sofradan</p>
+      <h2 data-tr="Tadımlık birkaç lezzet" data-en="A taste of what awaits">Tadımlık birkaç lezzet</h2>
+      <p data-tr="Tam menü için sayfayı ziyaret edin veya masanızdaki QR'ı okutun." data-en="Visit the full menu page or scan the QR code at your table.">Tam menü için sayfayı ziyaret edin veya masanızdaki QR'ı okutun.</p>
+    </div>
+    <!-- Bu önizleme örnektir; menu.html ile aynı isimleri kullanman yeterli -->
+    <div class="mp-grid">
+      <div class="mp-item"><span class="name" data-tr="Izgara Levrek" data-en="Grilled Sea Bass">Izgara Levrek</span><span class="dots"></span><span class="price">₺600</span></div>
+      <div class="mp-item"><span class="name" data-tr="Izgara Çipura" data-en="Grilled Sea Bream">Izgara Çipura</span><span class="dots"></span><span class="price">₺550</span></div>
+      <div class="mp-item"><span class="name" data-tr="Karides" data-en="Prawn">Karides</span><span class="dots"></span><span class="price">₺600</span></div>
+      <div class="mp-item"><span class="name" data-tr="Kalamar" data-en="Calamari">Kalamar</span><span class="dots"></span><span class="price">₺650</span></div>
+      <div class="mp-item"><span class="name" data-tr="Çıtır Balık" data-en="Crispy Fish">Çıtır Balık</span><span class="dots"></span><span class="price">₺500</span></div>
+      <div class="mp-item"><span class="name" data-tr="Pirzola" data-en="Lamb Chops">Pirzola</span><span class="dots"></span><span class="price">₺850</span></div>
+    </div>
+    <a class="btn" href="menu.html" data-tr="Tüm Menüyü Aç" data-en="Open Full Menu">Tüm Menüyü Aç</a>
+  </div>
+</section>
+
+<!-- ================= GALERİ ================= -->
+<section class="gallery" id="galeri">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="eyebrow" data-tr="Galeri" data-en="Gallery">Galeri</p>
+      <h2 data-tr="Bahçemizden kareler" data-en="Moments from our garden">Bahçemizden kareler</h2>
+    </div>
+    <!-- FOTOĞRAFLAR: her .gp kutusunun içine <img src="img/1.jpg" alt=""> koy.
+         tall = uzun (2 satır), wide = geniş (2 sütun) -->
+    <div class="grid-photos">
+      <div class="gp tall"><span data-tr="Fotoğraf 1" data-en="Photo 1">Fotoğraf 1</span></div>
+      <div class="gp"><span data-tr="Fotoğraf 2" data-en="Photo 2">Fotoğraf 2</span></div>
+      <div class="gp"><span data-tr="Fotoğraf 3" data-en="Photo 3">Fotoğraf 3</span></div>
+      <div class="gp wide"><span data-tr="Fotoğraf 4 (geniş)" data-en="Photo 4 (wide)">Fotoğraf 4 (geniş)</span></div>
+      <div class="gp"><span data-tr="Fotoğraf 5" data-en="Photo 5">Fotoğraf 5</span></div>
+      <div class="gp"><span data-tr="Fotoğraf 6" data-en="Photo 6">Fotoğraf 6</span></div>
+      <div class="gp"><span data-tr="Fotoğraf 7" data-en="Photo 7">Fotoğraf 7</span></div>
+    </div>
+    <div class="center" style="margin-top:32px">
+      <a class="btn" href="https://www.instagram.com/akvaryum_park_restaurant/" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        <span data-tr="Instagram'da Takip Et" data-en="Follow on Instagram">Instagram'da Takip Et</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REZERVASYON / ORGANİZASYON ================= -->
+<section class="booking" id="rezervasyon">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="eyebrow" data-tr="Talep Formu" data-en="Request Form">Talep Formu</p>
+      <h2 data-tr="Rezervasyon & Organizasyon" data-en="Reservation & Events">Rezervasyon & Organizasyon</h2>
+      <p data-tr="Masa ayırtmak, doğum günü veya özel bir organizasyon için formu doldurun — en kısa sürede size dönelim." data-en="Book a table, or plan a birthday or special event — fill in the form and we'll get back to you shortly.">Masa ayırtmak, doğum günü veya özel bir organizasyon için formu doldurun — en kısa sürede size dönelim.</p>
+    </div>
+
+    <!-- ============================================================
+         FORMSPREE: aşağıdaki action'daki XXXXXXXX yerine kendi form
+         ID'ni yaz (formspree.io'da yeni form aç → hasrettufekci@gmail.com).
+         Statik sitede çalışır, sunucu gerekmez.
+         ============================================================ -->
+    <form class="booking-form" action="https://formspree.io/f/XXXXXXXX" method="POST">
+      <div class="field">
+        <label data-tr="Talep türü" data-en="Request type">Talep türü</label>
+        <select name="Talep Türü" required>
+          <option value="Rezervasyon" data-tr="Rezervasyon (masa)" data-en="Reservation (table)">Rezervasyon (masa)</option>
+          <option value="Doğum Günü" data-tr="Doğum günü" data-en="Birthday">Doğum günü</option>
+          <option value="Organizasyon" data-tr="Organizasyon / özel etkinlik" data-en="Event / special occasion">Organizasyon / özel etkinlik</option>
+        </select>
+      </div>
+      <div class="row2">
+        <div class="field">
+          <label data-tr="Ad Soyad" data-en="Full name">Ad Soyad</label>
+          <input type="text" name="Ad Soyad" required>
+        </div>
+        <div class="field">
+          <label data-tr="Telefon" data-en="Phone">Telefon</label>
+          <input type="tel" name="Telefon" required>
+        </div>
+      </div>
+      <div class="row2">
+        <div class="field">
+          <label data-tr="Tarih" data-en="Date">Tarih</label>
+          <input type="date" name="Tarih" required>
+        </div>
+        <div class="field">
+          <label data-tr="Saat" data-en="Time">Saat</label>
+          <input type="time" name="Saat">
+        </div>
+      </div>
+      <div class="row2">
+        <div class="field">
+          <label data-tr="Kişi sayısı" data-en="Number of guests">Kişi sayısı</label>
+          <input type="number" name="Kişi Sayısı" min="1" value="2">
+        </div>
+        <div class="field">
+          <label data-tr="E-posta (opsiyonel)" data-en="Email (optional)">E-posta (opsiyonel)</label>
+          <input type="email" name="email">
+        </div>
+      </div>
+      <div class="field">
+        <label data-tr="Not / İstekler" data-en="Notes / requests">Not / İstekler</label>
+        <textarea name="Not" rows="3" data-tr-attr="placeholder" data-tr-placeholder="Örn. doğum günü pastası, deniz manzaralı masa…" data-en-placeholder="e.g. birthday cake, table with sea view…" placeholder="Örn. doğum günü pastası, deniz manzaralı masa…"></textarea>
+      </div>
+      <button type="submit" class="btn" data-tr="Talebi Gönder" data-en="Send request">Talebi Gönder</button>
+      <p class="form-note" data-tr="Form gönderildiğinde talebiniz e-posta olarak bize ulaşır. Bu bir ön taleptir; kesinleşmesi için sizi arayabiliriz." data-en="Your request reaches us by email. This is a preliminary request; we may call you to confirm.">Form gönderildiğinde talebiniz e-posta olarak bize ulaşır.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ================= YORUMLAR ================= -->
+<section class="reviews" id="yorumlar">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="eyebrow" data-tr="Misafirlerimiz" data-en="Our Guests">Misafirlerimiz</p>
+      <h2 data-tr="Soframızdan ayrılırken…" data-en="As they leave our table…">Soframızdan ayrılırken…</h2>
+    </div>
+    <!-- ============================================================
+         FEATURABLE CANLI GOOGLE YORUMLARI
+         1) featurable.com'da ücretsiz hesap aç, Google işletmeni bağla
+         2) Bir widget oluştur, sana verdiği WIDGET ID'yi al
+         3) Aşağıdaki div'in id'sindeki XXXXXXXX yerine o ID'yi yaz
+         Script en altta zaten yüklü. Bağlanınca canlı yorumlar burada akar.
+         ============================================================ -->
+    <div id="featurable-XXXXXXXX" data-featurable-async></div>
+
+    <!-- Widget bağlanana kadar görünecek yedek mesaj (bağlayınca silebilirsin) -->
+    <p class="center" style="color:var(--ink-soft)" data-tr="Canlı Google yorumları yakında burada. Şimdilik tüm yorumları Google'da görebilirsiniz." data-en="Live Google reviews coming here soon. For now, see all reviews on Google.">Canlı Google yorumları yakında burada.</p>
+
+    <div class="center">
+      <!-- GOOGLE YORUMLAR LİNKİ: aşağıdaki href'i Google işletme yorum bağlantınla değiştir -->
+      <a class="btn ghost" href="https://www.google.com/maps/place/Akvaryum+Cafe+Park+Resturant" target="_blank" rel="noopener" data-tr="Tüm Yorumları Google'da Oku" data-en="Read All Reviews on Google">Tüm Yorumları Google'da Oku</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= İLETİŞİM ================= -->
+<section class="contact" id="iletisim">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" style="color:var(--gold)" data-tr="İletişim" data-en="Contact">İletişim</p>
+      <h2 data-tr="Sizi bekliyoruz" data-en="We're waiting for you">Sizi bekliyoruz</h2>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-7-10a7 7 0 0 1 14 0c0 5.5-7 10-7 10Z"/><circle cx="12" cy="11" r="2.5"/></svg>
+          <div>
+            <b data-tr="Adres" data-en="Address">Adres</b>
+            <span>Yeşilköy Mah. Atatürk Blv. Karakitaplar Sok. No:1<br>(Yeşilköy Lisesi yanı) Kaş / Antalya</span>
+          </div>
+        </div>
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+          <div>
+            <b data-tr="Telefon" data-en="Phone">Telefon</b>
+            <!-- TELEFON: numarayı yaz -->
+            <a href="tel:+905323065948">+90 532 306 59 48</a>
+          </div>
+        </div>
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div>
+            <b data-tr="Çalışma Saatleri" data-en="Opening Hours">Çalışma Saatleri</b>
+            <!-- SAATLER: kendi saatlerini yaz -->
+            <span data-tr="Her gün · 10:00 – 00:00" data-en="Every day · 10:00 – 00:00">Her gün · 10:00 – 00:00</span>
+          </div>
+        </div>
+        <div class="socials" aria-label="Sosyal medya">
+          <a href="https://www.instagram.com/akvaryum_park_restaurant/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com/akvaryumpark/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <!-- HARİTA: konum bağlı; istersen embed linkini Google'dan güncelle -->
+      <div class="map-frame">
+        <iframe
+          src="https://maps.google.com/maps?q=36.2818835,29.3802423&z=15&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Akvaryum Park konum"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© <span id="yil"></span> Akvaryum Park Cafe &amp; Restaurant · Kaş / Antalya</p>
+  </div>
+</footer>
+
+<script>document.getElementById("yil").textContent = new Date().getFullYear();</script>
+<!-- Featurable canlı yorumlar (widget ID'sini yukarıdaki div'e yazınca çalışır) -->
+<script src="https://featurable.com/assets/bundle.js" charset="utf-8" defer></script>
+<script src="script.js"></script>
+</body>
+</html>
