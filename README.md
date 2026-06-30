@@ -1,47 +1,46 @@
 # Akvaryum Park Cafe & Restaurant — Web Sitesi
 
-Sıcak & rustik temalı, **Türkçe + İngilizce** (dil seçici), statik site.
-Sunucu gerektirmez — GitHub Pages, Netlify veya Cloudflare Pages'e atılır.
+**Konsept:** "Akdeniz'in doğasında saklı bir gece bahçesi."
+Gece paleti (koyu + dolunay altını/amber + akvaryum turkuazı), **Türkçe + İngilizce**,
+tamamen statik. Gerçek fotoğraflar gömülü — yayına hazır.
 
-## Dosyalar
-| Dosya | Açıklama |
-|-------|----------|
-| `index.html` | Ana sayfa (hero, hikaye, öne çıkanlar, menü önizleme, galeri, rezervasyon/organizasyon formu, yorumlar, iletişim) |
-| `menu.html`  | Tam menü — **QR bu sayfayı gösterir** (gerçek fiyatlar girildi) |
-| `style.css`  | Tüm tasarım (`:root` içinde renkler) |
-| `script.js`  | Dil seçici (TR/EN) + mobil menü |
-| `qr_olustur.py` | Menü QR üretici |
+## Marka hiyerarşisi (siteye işlenen)
+1. **Akvaryum** — kimlik (isim bunu söylüyor) → hero'da tabelalar + akvaryumlar
+2. **Dolunay** — imza/foto noktası → kendi özel bölümü (akvaryum içindeki ışıklı ay)
+3. **Bahçe + gece ışıkları** — atmosfer
+4. **Sofra** — taze balık & ev yapımı lezzetler
 
-## ✅ Hazır olanlar
-- Tüm menü, gerçek fiyatlarla (yemek + içecek + tatlı)
-- Telefon: 0532 306 59 48 · Saatler: her gün 10:00 – 00:00
-- Adres, harita, Instagram, Facebook bağlı
-- Rezervasyon / doğum günü / organizasyon formu (talep türü seçmeli)
-- Featurable canlı yorumlar için hazır bölüm
-
-## ⚙️ Senin doldurman gerekenler
-1. **Featurable widget ID** — `index.html` içinde `featurable-XXXXXXXX`.
-   featurable.com → ücretsiz hesap → Google işletmeni bağla → widget oluştur → ID'yi yapıştır.
-2. **Formspree form ID** — `index.html` içinde form `action="https://formspree.io/f/XXXXXXXX"`.
-   formspree.io'da yeni form aç (hasrettufekci@gmail.com) → verdiği ID'yi yaz.
-3. **Fotoğraflar** — `img/` klasörüne koy:
-   - Hikaye görseli: `.photo` div → `<img src="img/bahce.jpg" alt="...">`
-   - Galeri: her `.gp` kutusu → `<img src="img/1.jpg" alt="">`
-   - Hero arka planı (opsiyonel): `style.css` içindeki `.hero` notuna bak.
-4. **Google yorumlar linki** — yorumlar butonundaki `href`'i kendi Google işletme bağlantınla değiştir.
-
-## 🔎 Kontrol edilecek menü fiyatları (el yazısı netti ama yine de bir bak)
-- **Ayran** → ₺150 girdim (emin değilim, kola/fanta ₺100 idi).
-- **Yeşil Çay** → fiyat görünmüyordu, `—` bıraktım.
-- **Şehriye, Çabuk Çorba, Sezar Salata** → fiyat boştu, `—` bıraktım. Fiyat varsa yaz.
-
-## Renkleri değiştirmek
-`style.css` en üstteki `:root` bloğu (`--sea`, `--clay`, `--sand` vb.).
-
-## QR kod
-Domain kesinleşince:
+## Klasör yapısı (repoya bu şekilde)
 ```
-pip install "qrcode[pil]"
-# qr_olustur.py içindeki MENU_URL'yi kendi adresinle değiştir
-python qr_olustur.py   # -> menu_qr.png
+akvaryumpark-site/
+├─ index.html   ├─ menu.html   ├─ style.css   ├─ script.js
+├─ img/         ← logo + tüm fotoğraflar (HAZIR)
+├─ qr_olustur.py └─ README.md
 ```
+
+## img/ içeriği
+- `logo.png` (şeffaf), `exterior-night.jpg` (hero), `moon-aquarium.jpg` (dolunay),
+  `story.jpg`, `galeri-1..7.jpg`
+
+## ✅ Hazır
+- Gece bahçesi teması, gerçek gece dış cephe hero'su
+- **Dolunay bölümü**: akvaryum içindeki ışıklı ay + #AkvaryumPark + Instagram
+- Hikaye: "Evimizden kalbinize taşan lezzetler"
+- Galeri (7 gerçek kare), tam menü + gerçek fiyatlar
+- Telefon 0532 306 59 48 · her gün 10:00–00:00 · adres/harita/IG/FB
+
+## ⚙️ Sadece 2 şey kaldı (kodda XXXX)
+1. **Featurable widget ID** — `index.html` → `featurable-XXXXXXXX` (canlı Google yorumları)
+2. **Formspree form ID** — `index.html` → `formspree.io/f/XXXXXXXX` (rezervasyon formu)
+
+## Notlar
+- Aile fotoğrafı (Image 3) gizlilik için kullanılmadı; o kareden sadece akvaryum+dolunay kırpıldı. İzinleri varsa aile karesini ekleyebiliriz.
+- Instagram: tabelada `akvaryumparkcafe`, bağlı olan `akvaryum_park_restaurant`. Asıl hesabı söyle, güncelleyeyim.
+- Birkaç fiyat el yazısından okundu (Ayran ₺150, Yeşil Çay & birkaç çorba boş) — kontrol et.
+- Reels/özel şarkı: istersen ekleriz (Instagram gömme ya da küçük müzik oynatıcı).
+
+## Renkler
+`style.css` en üstteki `:root` (`--amber`, `--sea`, `--bg`, `--bg-2` ...).
+
+## QR (domain sonrası)
+`qr_olustur.py` içindeki URL'yi değiştir → `python qr_olustur.py`.
