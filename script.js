@@ -88,6 +88,16 @@
   }
 
   function init(){
+    // Bugünün tarihi + şu anki saat otomatik dolsun (elle yazmaya gerek yok)
+    var d = new Date();
+    var pad = function(n){ return (n<10 ? "0" : "") + n; };
+    var bugun = d.getFullYear() + "-" + pad(d.getMonth()+1) + "-" + pad(d.getDate());
+    var simdi = pad(d.getHours()) + ":" + pad(d.getMinutes());
+    var dEl = document.getElementById("rz-tarih");
+    var tEl = document.getElementById("rz-saat");
+    if(dEl){ dEl.value = bugun; dEl.min = bugun; }  // geçmiş tarih seçilemez
+    if(tEl){ tEl.value = simdi; }
+
     var wa = document.getElementById("rz-whatsapp");
     var em = document.getElementById("rz-eposta");
     if(wa) wa.addEventListener("click", function(){
