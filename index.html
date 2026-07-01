@@ -186,57 +186,59 @@
       <h2 data-tr="Rezervasyon & Organizasyon" data-en="Reservation & Events">Rezervasyon & Organizasyon</h2>
       <p data-tr="Masa ayırtmak, doğum günü veya özel bir organizasyon için formu doldurun — en kısa sürede size dönelim." data-en="Book a table, or plan a birthday or special event — fill in the form and we'll get back to you shortly.">Masa ayırtmak, doğum günü veya özel bir organizasyon için formu doldurun — en kısa sürede size dönelim.</p>
     </div>
-
-    <!-- ============================================================
-         FORMSPREE: aşağıdaki action'daki XXXXXXXX yerine kendi form
-         ID'ni yaz (formspree.io'da yeni form aç → hasrettufekci@gmail.com).
-         Statik sitede çalışır, sunucu gerekmez.
-         ============================================================ -->
-    <form class="booking-form" action="https://formspree.io/f/XXXXXXXX" method="POST">
+        <form class="booking-form" id="rezervasyon-form" onsubmit="return false;">
       <div class="field">
         <label data-tr="Talep türü" data-en="Request type">Talep türü</label>
-        <select name="Talep Türü" required>
-          <option value="Rezervasyon" data-tr="Rezervasyon (masa)" data-en="Reservation (table)">Rezervasyon (masa)</option>
-          <option value="Doğum Günü" data-tr="Doğum günü" data-en="Birthday">Doğum günü</option>
-          <option value="Organizasyon" data-tr="Organizasyon / özel etkinlik" data-en="Event / special occasion">Organizasyon / özel etkinlik</option>
+        <select id="rz-tur">
+          <option data-tr="Rezervasyon (masa)" data-en="Reservation (table)">Rezervasyon (masa)</option>
+          <option data-tr="Doğum günü" data-en="Birthday">Doğum günü</option>
+          <option data-tr="Organizasyon / özel etkinlik" data-en="Event / special occasion">Organizasyon / özel etkinlik</option>
         </select>
       </div>
       <div class="row2">
         <div class="field">
           <label data-tr="Ad Soyad" data-en="Full name">Ad Soyad</label>
-          <input type="text" name="Ad Soyad" required>
+          <input type="text" id="rz-ad" required>
         </div>
         <div class="field">
           <label data-tr="Telefon" data-en="Phone">Telefon</label>
-          <input type="tel" name="Telefon" required>
+          <input type="tel" id="rz-tel" required>
         </div>
       </div>
       <div class="row2">
         <div class="field">
           <label data-tr="Tarih" data-en="Date">Tarih</label>
-          <input type="date" name="Tarih" required>
+          <input type="date" id="rz-tarih" required>
         </div>
         <div class="field">
           <label data-tr="Saat" data-en="Time">Saat</label>
-          <input type="time" name="Saat">
+          <input type="time" id="rz-saat">
         </div>
       </div>
       <div class="row2">
         <div class="field">
           <label data-tr="Kişi sayısı" data-en="Number of guests">Kişi sayısı</label>
-          <input type="number" name="Kişi Sayısı" min="1" value="2">
+          <input type="number" id="rz-kisi" min="1" value="2">
         </div>
         <div class="field">
           <label data-tr="E-posta (opsiyonel)" data-en="Email (optional)">E-posta (opsiyonel)</label>
-          <input type="email" name="email">
+          <input type="email" id="rz-email">
         </div>
       </div>
       <div class="field">
         <label data-tr="Not / İstekler" data-en="Notes / requests">Not / İstekler</label>
-        <textarea name="Not" rows="3" data-tr-attr="placeholder" data-tr-placeholder="Örn. doğum günü pastası, ağaç altı masa…" data-en-placeholder="e.g. birthday cake, table under the trees…" placeholder="Örn. doğum günü pastası, ağaç altı masa…"></textarea>
+        <textarea id="rz-not" rows="3" data-tr-attr="placeholder" data-tr-placeholder="Örn. doğum günü pastası, ağaç altı masa…" data-en-placeholder="e.g. birthday cake, table under the trees…" placeholder="Örn. doğum günü pastası, ağaç altı masa…"></textarea>
       </div>
-      <button type="submit" class="btn" data-tr="Talebi Gönder" data-en="Send request">Talebi Gönder</button>
-      <p class="form-note" data-tr="Form gönderildiğinde talebiniz e-posta olarak bize ulaşır. Bu bir ön taleptir; kesinleşmesi için sizi arayabiliriz." data-en="Your request reaches us by email. This is a preliminary request; we may call you to confirm.">Form gönderildiğinde talebiniz e-posta olarak bize ulaşır.</p>
+      <div class="rz-buttons">
+        <button type="button" class="btn sea" id="rz-whatsapp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.9.9-2.7-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.1-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3c-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1 0-.1-.2-.2-.5-.3z"/></svg>
+          <span data-tr="WhatsApp ile Gönder" data-en="Send via WhatsApp">WhatsApp ile Gönder</span>
+        </button>
+        <button type="button" class="btn ghost" id="rz-eposta">
+          <span data-tr="E-posta ile Gönder" data-en="Send via Email">E-posta ile Gönder</span>
+        </button>
+      </div>
+      <p class="form-note" data-tr="Tercih ettiğiniz butona basın; bilgileriniz hazır mesaj olarak açılır. Bu bir ön taleptir, kesinleşmesi için sizi arayabiliriz." data-en="Tap your preferred button; your details open as a ready message. This is a preliminary request; we may call you to confirm.">Tercih ettiğiniz butona basın; bilgileriniz hazır mesaj olarak açılır. Bu bir ön taleptir, kesinleşmesi için sizi arayabiliriz.</p>
     </form>
   </div>
 </section>

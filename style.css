@@ -206,3 +206,7 @@ footer a { color: var(--amber); text-decoration: none; }
   .booking-form { padding: 22px; }
 }
 :focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; border-radius: 4px; }
+
+/* Rezervasyon butonları (WhatsApp + E-posta) */
+.rz-buttons { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; }
+.rz-buttons .btn { width: 100%; margin-top: 0; }
