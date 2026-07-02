@@ -4,7 +4,7 @@
   var KEY = "akvaryum_lang";
 
   function setLang(lang) {
-    if (lang !== "tr" && lang !== "en") lang = "tr";
+    if (lang !== "tr" && lang !== "en" && lang !== "de") lang = "tr";
     document.documentElement.lang = lang;
 
     document.querySelectorAll("[data-tr]").forEach(function (el) {
